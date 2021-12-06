@@ -20,23 +20,23 @@ ssh atlas
 本课程主要由3个notebook文件组成，分别包含，对预处理样本做事例筛选(`select_events.ipynb`)，画图 (`plotting.ipynb`)，和统计分析(`statistics.ipynb`)。
 
 ### 获取课程材料
+登录JupyterHub或者自己建立jupyter notebook，在右侧 `new` 下拉菜单栏，选取`Terminal`，进入终端。
 
-1. 登录JupyterHub或者自己建立jupyter notebook，在右侧 `new` 下拉菜单栏，选取`Terminal`，进入终端。
+```bash
+git clone https://github.com/shimashimarin/zajj_wintercamp.git
+```
 
-    ```bash
-    git clone https://github.com/shimashimarin/zajj_wintercamp.git
-    ```
+如不能下载，可以直接从已有目录中拷贝：
 
-    如不能下载，可以直接从已有目录中拷贝：
+```bash
+mkdir zajj_wintercamp
+cd zajj_wintercamp
+cp /home/pku/songyx/jiexiao/wincamp/*ipynb .
+cp /home/pku/songyx/jiexiao/wincamp/config_histograms.yml .
+```
+### 测试课程材料
+依次打开并运行`notebook`文件，`test_env.ipynb`，`select_events.ipynb`，`plotting.ipynb`，和 `statistics.ipynb`。
 
-    ```bash
-    mkdir zajj_wintercamp
-    cd zajj_wintercamp
-    cp /home/pku/songyx/jiexiao/wincamp/*ipynb .
-    cp /home/pku/songyx/jiexiao/wincamp/config_histograms.yml .
-    ```
-2. 依次打开并运行`notebook`文件，`select_events.ipynb`，`plotting.ipynb`，`statistics.ipynb`。
-
-    > 打开 notebook 文件后，需要先在左侧顶栏，在 `Kernel` 复选框中，选择 `Python [conda env:wintercamp]`，其他选项环境设置不同，会导致运行失败。
-    >
+> 打开 notebook 文件后，需要先在左侧顶栏，在 `Kernel` 复选框中，选择 `Python [conda env:wintercamp]`，其他选项环境设置不同，会导致运行失败。
+>
 
