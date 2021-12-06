@@ -1,5 +1,5 @@
-# 重复 VBS $Z\gamma$ 分析
-基于 CMS Full RunII VBS $Z\gamma$ 分析：[arxiv:2106.11082](https://arxiv.org/abs/2106.11082)
+# 重复 VBS ZGamma 分析
+基于 CMS Full RunII VBS ZGamma 分析：[arxiv:2106.11082](https://arxiv.org/abs/2106.11082)
 
 ## 环境设置
 
