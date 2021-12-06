@@ -11,9 +11,10 @@
 
 如上述方法使用存在问题，可以登录服务器账号，自己设置环境。方法如下 （参考 [install miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)），
 
-1. 登录临时服务器账号，运行命令
+1. 登录临时服务器账号，安装 `Miniconda`，并安装所需软件包
 
 ```bash
+ssh <yourusername>@<your.server.address>
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
 bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
 conda create --name myenv python=3.9.4
@@ -22,7 +23,7 @@ conda activate myenv
 pip install awkward coffea numpy numba uproot matplotlib \
 boost_histogram mplhep pyhf jupyter ipywidgets jupyterlab cabinetry[contrib]
 
-# 打开jupyter notebook，注意：--port 后面的参数，大家任取2位～4位数字，大家同时用一个端口，会引起冲突
+# 打开jupyter notebook，注意：--port 后面的参数，大家任取4～5位数字，大家同时用一个端口，会引起冲突
 
 jupyter notebook --no-browser --port 7777 
 
@@ -33,7 +34,7 @@ jupyter notebook --no-browser --port 7777
 2. 重新在本地打开一个终端，运行命令
 
 ```
-ssh -L 7777:localhost:7777 atlas
+ssh -L 7777:localhost:7777 <yourusername>@<your.server.address>
 ```
 3. 将URLs复制粘贴至浏览器打开。
 
