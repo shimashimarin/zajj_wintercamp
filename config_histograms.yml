@@ -1,0 +1,84 @@
+General:
+  Measurement: "zajj"
+  POI: "Signal_norm"
+  HistogramFolder: "histograms/"
+  InputPath: "inputs/histograms.root:{RegionPath}/{SamplePath}/{VariationPath}"
+  VariationPath: "Nominal"
+
+Regions:
+  - Name: "Signal_region"
+    RegionPath: "SR"
+  - Name: "Control_region"
+    RegionPath: "CR"
+
+Samples:
+  - Name: "Data"
+    SamplePath: "Data"
+    Data: True
+
+  - Name: "Signal"
+    SamplePath: "Signal"
+
+  - Name: "ZGammaQCD"
+    SamplePath: "ZGammaQCD"
+
+  - Name: "FakePhoton"
+    SamplePath: "FakePhoton"
+
+  - Name: "Others"
+    SamplePath: "Others"
+
+Systematics:
+  - Name: "Luminosity"
+    Up:
+      Normalization: 0.012
+    Down:
+      Normalization: -0.012
+    Samples: ["Signal","ZGammaQCD","Others"]
+    Type: "Normalization"
+
+  - Name: "SignalPDF"
+    Up:
+      Normalization: 0.02
+    Down:
+      Normalization: -0.02
+    Samples: "Signal"
+    Type: "Normalization"
+
+  - Name: "SignalScale"
+    Up:
+      Normalization: 0.10
+    Down:
+      Normalization: -0.10
+    Samples: "Signal"
+    Type: "Normalization"
+
+  - Name: "FakeSyst"
+    Up:
+      VariationPath: "FakeSyst_up"
+    Down:
+      VariationPath: "FakeSyst_down"
+    Samples: "FakePhoton"
+    Type: "NormPlusShape"
+
+  - Name: "JEC"
+    Up:
+      VariationPath: "JEC_up"
+    Down:
+      VariationPath: "JEC_down"
+    Samples: ["Signal","ZGammaQCD","Others"]
+    Type: "NormPlusShape"
+
+  - Name: "JER"
+    Up:
+      VariationPath: "JER_up"
+    Down:
+      VariationPath: "JER_down"
+    Samples: ["Signal","ZGammaQCD","Others"]
+    Type: "NormPlusShape"
+
+NormFactors:
+  - Name: "Signal_norm"
+    Samples: "Signal"
+    Nominal: 1
+    Bounds: [0, 10]
