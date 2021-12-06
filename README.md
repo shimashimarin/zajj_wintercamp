@@ -62,14 +62,13 @@ git clone https://github.com/shimashimarin/zajj_wintercamp.git
 cd zajj_wintercamp
 ```
 
-如不能下载，可以
 点击左上角 `JupyterHub` 图标，回到查看目录页面。
 
 ### 测试课程材料
 
 依次打开并运行 `zajj_wintercamp` 目录下的 `notebook`文件，`test_env.ipynb`，`select_events.ipynb`，`plotting.ipynb`，和 `statistics.ipynb`。
 
-同时按住 `enter`+`shift` 来运行 `cell`。
+要运行`cell`，只需同时点击 `enter`+`shift`。
 
 > 每次打开 `notebook` 文件后，需要先在左侧顶栏，在 `Kernel` 复选框中，选择 `Python [conda env:wintercamp]`，其他选项环境设置不同，会导致运行失败。
 >
