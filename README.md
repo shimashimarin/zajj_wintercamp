@@ -52,7 +52,7 @@ ssh -L 7777:localhost:7777 <yourusername>@<your.server.address>
 ```bash
 mkdir zajj_wintercamp
 cd zajj_wintercamp
-cp /home/pku/songyx/jiexiao/wincamp/*
+cp /data/pubfs/pku_visitor/public_write/repo_backup/*
 ```
 
 或者通过github克隆仓库：
