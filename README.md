@@ -51,9 +51,8 @@ ssh -L 7777:localhost:7777 <yourusername>@<your.server.address>
 直接从已有目录中拷贝（**推荐**🌟🌟🌟）：
 
 ```bash
-mkdir zajj_wintercamp
+cp -r /data/pubfs/pku_visitor/public_write/zajj_wintercamp/ .
 cd zajj_wintercamp
-cp /data/pubfs/pku_visitor/public_write/repo_backup/* .
 ```
 
 或者通过github克隆仓库：
