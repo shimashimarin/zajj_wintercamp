@@ -42,9 +42,10 @@ ssh -L 7777:localhost:7777 <yourusername>@<your.server.address>
 
 ## 课程内容
 
-本课程主要由3个 `notebook` 文件组成，分别包含，对预处理样本做事例筛选(`select_events.ipynb`)，画图 (`plotting.ipynb`)，和统计分析(`statistics.ipynb`)。
+本课程主要由3个 `notebook` 文件组成，分别包含，假光子的估计`nonprompt_photon.ipynb`，对预处理样本做事例筛选(`select_events.ipynb`)，画图 (`plotting.ipynb`)，和统计解释(`statistics.ipynb`)。
 
 ### 获取课程材料
+
 登录 `JupyterHub` 或者自己建立jupyter notebook，在右侧 `new` 下拉菜单栏，选取`Terminal`，进入终端。
 
 直接从已有目录中拷贝（**推荐**🌟🌟🌟）：
@@ -66,9 +67,7 @@ cd zajj_wintercamp
 
 ### 测试课程材料
 
-依次打开并运行 `zajj_wintercamp` 目录下的 `notebook`文件，`test_env.ipynb`，`select_events.ipynb`，`plotting.ipynb`，和 `statistics.ipynb`。
-
-要运行`cell`，只需同时点击 `enter`+`shift`。
+打开并运行 `zajj_wintercamp` 目录下的 `notebook`文件`test_env.ipynb`。同时点击 `enter`+`shift`，来运行`cell`。
 
 > 每次打开 `notebook` 文件后，需要先在左侧顶栏，在 `Kernel` 复选框中，选择 `Python [conda env:wintercamp]`，其他选项环境设置不同，会导致运行失败。
 >
