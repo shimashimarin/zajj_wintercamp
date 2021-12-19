@@ -30,13 +30,6 @@ Samples:
 
 Systematics:
   # add here Luminosity uncertainties
-  - Name: "LumiSyst"
-    Up:
-      Normalization: 0.02
-    Down:
-      Normalization: -0.02
-    Samples: ["Signal","ZGammaQCD","Others"]
-    Type: "Normalization"
 
   - Name: "SignalPDF"
     Up:
